@@ -91,7 +91,7 @@ function App() {
   }
   
   return (
-    <div style={{padding: 80}}>
+    <div style={{padding: 50}}>
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
         <span class="navbar-brand mb-0 h1 ">Angeles´ DAPP</span>
@@ -112,7 +112,7 @@ function App() {
 
       <div class="card">
         <div class="card-header">
-          Mew messages
+          New messages
         </div>
         <div class="card-body">
           <h5 class="card-title">Write the message you want to send</h5>
@@ -140,7 +140,7 @@ null
 {
 alert === true ?
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Transaccion succesfully made!</strong> 
+  <strong>Transaction successfully made!</strong> 
   <button onClick={handleAlert} type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
@@ -149,7 +149,7 @@ alert === true ?
 null
 }
 <hr />
-
+<h4>Transactions record</h4>
 <table class="table">
   <thead>
     
@@ -166,6 +166,7 @@ null
     return(
     <tbody>
     <tr>
+    
       <td>{e.from}</td>
       <td>{e.to}</td>
       <td>{e.gasUsed}</td>
